@@ -1,4 +1,6 @@
+@echo off
 git add --all
-git commit -m "Initial commit"
+set /p commit="Commit: "
+git commit -m "%commit%"
 git push
 pause
